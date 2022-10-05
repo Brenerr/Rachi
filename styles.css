@@ -43,6 +43,15 @@ h2 {
   color: #293145;
 }
 
+button {
+  transition: filter .2s;
+}
+
+button:hover {
+  filter: brightness(120%);
+  transition: filter .2;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -50,6 +59,7 @@ h2 {
 
 .row-center {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -82,14 +92,6 @@ header {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-  gap: calc(50rem / 16);
-}
-
-#logo {
-  height: 2rem;
-}
-
 #hero-page {
   padding: calc(70rem / 16) calc(135rem / 16);
   background: #eff8ff;
@@ -119,10 +121,6 @@ nav ul {
   padding: calc(56rem / 16) calc(252rem / 16) calc(109rem / 16);
 }
 
-#functionalities div {
-  gap: calc(80rem / 16);
-}
-
 #functionalities ul {
   width: 100%;
   text-align: center;
@@ -147,10 +145,6 @@ nav ul {
   background: #eff8ff;
 }
 
-#app h2 {
-  font-size: calc(32rem / 16);
-}
-
 #app p {
   max-width: calc(444rem / 16);
   margin: calc(24rem / 16) 0 calc(36rem / 16);
@@ -161,7 +155,7 @@ nav ul {
   border-radius: calc(8rem / 16);
   padding: calc(10rem / 16) calc(12rem / 16) calc(4rem / 16);
   border: none;
-  margin-right: calc(30rem/16);
+  margin-right: calc(30rem / 16);
   cursor: pointer;
 }
 
@@ -172,4 +166,153 @@ nav ul {
 #app-img {
   width: calc(400rem / 16);
   height: calc(400rem / 16);
+}
+
+#plans {
+  text-align: center;
+  padding: calc(50rem / 16) calc(135rem / 16) calc(130rem / 16);
+}
+
+#plans div > div {
+  gap: calc(30rem / 16);
+  align-items: stretch;
+}
+
+#plans div > p {
+  font-size: calc(18rem / 16);
+  margin: calc(16rem / 16) auto calc(96rem / 16);
+  max-width: calc(570rem / 16);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: calc(32rem / 16) calc(35rem / 16) calc(64rem / 16);
+  max-width: calc(370rem / 16);
+
+  border-radius: calc(8rem / 16);
+  background: #eff8ff;
+}
+
+.card h2 {
+  font-size: calc(24rem / 16);
+}
+
+.card strong {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: calc(50rem / 16);
+  line-height: calc(24rem / 16);
+  margin-top: calc(60rem / 16);
+}
+
+.card strong::before {
+  content: "R$";
+  font-size: calc(20rem / 16);
+  vertical-align: super;
+}
+
+.card strong::after {
+  content: "/mês";
+  font-size: calc(26rem / 16);
+}
+
+.card p {
+  font-size: calc(18rem / 16);
+  margin: calc(48rem / 16) auto calc(58rem / 16);
+}
+
+.card button {
+  background: #0f9afe;
+  border: none;
+  color: #fff;
+  padding: calc(8rem / 16) calc(80rem / 16);
+  border-radius: calc(50rem / 16);
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: calc(20rem / 16);
+  margin-bottom: calc(8rem / 16);
+  cursor: pointer;
+}
+
+.card span {
+  background: #0f9afe;
+  border-radius: calc(15rem / 16);
+  padding: calc(5rem / 16) calc(32rem / 16);
+  color: #fff;
+  font-size: calc(14rem / 16);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin-top: calc(14rem / 16);
+}
+
+.card:nth-child(2) {
+  background: #293145ff;
+}
+
+.card:nth-child(2) h2,
+.card:nth-child(2) button {
+  color: #fff;
+}
+.card:nth-child(2) p {
+  color: #dbdbdb;
+}
+
+.card:nth-child(2) strong {
+  color: #fff;
+  margin-top: calc(32rem / 16);
+}
+
+#contact {
+  padding: calc(50rem / 16) calc(135rem / 16) calc(85rem / 16);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-image: linear-gradient(rgba(41, 49, 69, 0.7), rgba(41, 49, 69, 0.7)), url("/assets/background.png");
+}
+
+#contact p {
+  font-size: calc(18rem / 16);
+  color: #dbdbdb;
+  margin: 1rem auto calc(93rem / 16);
+  max-width: calc(528rem / 16);
+}
+
+#contact input {
+  font-size: calc(18rem / 16);
+  font-weight: 500;
+  color: #fff;
+  font-weight: 500;
+  background: transparent;
+  padding: calc(4rem / 16) 0;
+  color: #fff;
+  border: none;
+  border-bottom: calc(1rem / 16) solid #fff;
+  margin-right: calc(40rem / 16);
+}
+
+#contact input::placeholder {
+  color: #fff;
+}
+
+#contact button {
+  font-size: calc(18rem / 16);
+  font-weight: 500;
+  color: #fff;
+  background: #0f9afe;
+  border: none;
+  padding: calc(8rem / 16) calc(32rem / 16);
+  border-radius: calc(50rem / 16);
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  font-size: calc(20rem / 16);
+  font-weight: 400;
+  color: #293145;
+  padding: calc(41rem / 16);
 }

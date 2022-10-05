@@ -20,8 +20,8 @@
   <body>
     <header class="row-center">
       <nav class="row-between container">
-        <img id="logo" src="./assets/logo.svg" alt="Logo" />
-        <ul class="row-between">
+        <img style="height: 2rem;" src="./assets/logo.svg" alt="Logo" />
+        <ul class="row-between" style="gap: calc(50rem / 16);">
           <li><a href="#functionalities">Funcionalidades</a></li>
           <li><a href="#app">App</a></li>
           <li><a href="#plans">Planos</a></li>
@@ -49,7 +49,7 @@
       </section>
 
       <section id="functionalities" class="row-center">
-        <div class="col-center container">
+        <div class="col-center container" style="gap: calc(80rem / 16);">
           <h2>Como funciona</h2>
           <ul class="row-around">
             <li class="col-center">
@@ -74,7 +74,9 @@
       <section id="app" class="row-center">
         <div class="row-between container">
           <span>
-            <h2>Baixe nosso app para desfrutar mais!</h2>
+            <h2 style="font-size: calc(32rem / 16);">
+              Baixe nosso app para desfrutar mais!
+            </h2>
             <p>
               Amet in elementum nulla scelerisque dui, egestas at. Elit
               consectetur turpis elementum amet vitae et etiam nec. Varius
@@ -91,10 +93,61 @@
         </div>
       </section>
 
-      <section id="plans">plans</section>
-      <section id="contact">contact</section>
+      <section id="plans" class="row-center">
+        <div class="col-center container">
+          <h2>Nossos Planos</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            lacinia mi quis euismod ultrices.
+          </p>
+          <div class="row-center">
+            <span class="card">
+              <h2>Bronze</h2>
+              <strong>28</strong>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                lacinia mi quis euismod ultrices.
+              </p>
+              <button>Assinar</button>
+            </span>
+            <span class="card" checked>
+              <h2>Prata</h2>
+              <span>PREFERIDO</span>
+              <strong>57</strong>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                lacinia mi quis euismod ultrices.
+              </p>
+              <button>Assinar</button>
+            </span>
+            <span class="card">
+              <h2>Ouro</h2>
+              <strong>28</strong>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                lacinia mi quis euismod ultrices.
+              </p>
+              <button>Assinar</button>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="row-center">
+        <div class="col-center container">
+          <h2 style="color: #fff;">Contato</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            lacinia mi quis euismod ultrices.
+          </p>
+          <span>
+            <input type="text" placeholder="Seu melhor e-mail" />
+            <button>Enviar</button>
+          </span>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>Rachi - Todos os direitos reservados.</footer>
   </body>
 </html>
